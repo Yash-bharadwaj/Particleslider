@@ -1,0 +1,98 @@
+<html>
+  <head>
+  	<meta name="viewport" content="width=device-width" />
+  	<title>ParticleSlider</title>
+  </head>
+  <body>
+    <div id="particle-slider">
+      <div class="slides">
+        <div id="first-slide" class="slide" data-src="
+		data:image/png;base64,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
+		">
+      	</div>
+    	</div>
+  		<canvas class="draw"></canvas>
+      
+      <style>
+          
+          #particle-slider {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: @bgImg;
+  background-position: center top;
+
+  .slides, & > .dg {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-image: @hintImg;
+    background-repeat: no-repeat;
+    
+    & > .dg {
+      display: block;
+    }
+  }
+}
+
+          </style>
+      
+      <script type="text/javascript">// Tamino Martinius - All rights reserved
+
+// Copyright © 2013 Tamino Martinius (http://zaku.eu)
+// Copyright © 2013 Particleslider.com (http://particleslider.com
+
+// Terms of usage: http://particleslider.com/legal/license
+
+var init = function(){
+  var isMobile = navigator.userAgent &&
+    navigator.userAgent.toLowerCase().indexOf('mobile') >= 0;
+  var isSmall = window.innerWidth < 900;
+  
+  var ps = new ParticleSlider({
+    ptlGap: isMobile || isSmall ? 3 : 0,
+    ptlSize: isMobile || isSmall ? 3 : 1
+  });
+    
+  var gui = new dat.GUI();
+  gui.add(ps, 'ptlGap').min(0).max(5).step(1).onChange(function(){
+    ps.init(true);
+  });
+  gui.add(ps, 'ptlSize').min(1).max(5).step(1).onChange(function(){
+    ps.init(true);
+  });
+  gui.add(ps, 'restless');
+  gui.addColor(ps, 'color').onChange(function(value){
+    ps.monochrome = true;
+    ps.setColor(value);
+	  ps.init(true);
+  });
+  
+  
+  (window.addEventListener
+   ? window.addEventListener('click', function(){ps.init(true)}, false)
+   : window.onclick = function(){ps.init(true)});
+}
+
+var initParticleSlider = function(){
+  var psScript = document.createElement('script');
+  (psScript.addEventListener
+    ? psScript.addEventListener('load', init, false)
+    : psScript.onload = init);
+  psScript.src = 'http://particleslider.com/js/particleslider/current/particleslider.js';
+	psScript.setAttribute('type', 'text/javascript');
+  document.body.appendChild(psScript);
+}
+    
+(window.addEventListener
+  ? window.addEventListener('load', initParticleSlider, false)
+  : window.onload = initParticleSlider);
+</script>
+
+  </body>
+</html>
